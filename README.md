@@ -51,7 +51,7 @@ class Service
     // Example
     function login(username, password, callback)
     {
-      this.getResponse("POST", "auth/login", {username:username, password:password}, callback, true) // true : async service
+      this.request.start("POST", "auth/login", {username:username, password:password}, callback, true) // true : async service
     }
 
 }
