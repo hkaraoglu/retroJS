@@ -41,17 +41,23 @@ var callback = new CallBack({
 service.login('username', 'password', callback);
 </pre>
 
-<b>Place that your web services locate: </b>
+<b>Place that your web services locate(service.js): </b>
 <pre>
 class Service
 {
 
     // your services are here....
     
-    // Example
-    function login(username, password, callback)
+    // example POST request
+    login(email, password, callback)
     {
-      this.request.start("POST", "auth/login", {username:username, password:password}, callback, true) // true : async service
+      this.request.start("POST", "auth/login", {"email" : email, "password" : password, "password" : password }, callback, {});
+    }
+
+    //example GET request
+    forgotten(email, callback)
+    {
+      this.request.start("GET", "auth/forgotten?email=" + email , "", callback, {}); // last parameter is options
     }
 
 }
