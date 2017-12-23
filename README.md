@@ -4,6 +4,21 @@ This is a Pure Javascipt HTTP client library. It is inspired by Retrofit. It is 
 
 It needs Jquery.
 
+<b>Add dependencies to your html head: </b>
+<pre>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="callback.js"></script>
+    <script type="text/javascript" src="service.js"></script>
+</pre>
+
+<b>Create a service instance to access your services that you defined: </b>
+
+<pre>
+  <script>
+      var service = new Service("your web service url");
+    </script>
+</pre>
+
 <b>To make a request: </b>
 
 <pre>var callback = new CallBack({
