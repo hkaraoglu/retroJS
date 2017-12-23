@@ -63,3 +63,9 @@ class Service
 }
 </pre>
 
+<b>options:</b>
+<pre>
+   cache: true|false // Caches request. Default:true,
+   async: true|false // Make a asynchronous request. Default:true,
+</pre>
+
