@@ -1,0 +1,3 @@
+# retroJS
+
+This is a HTTP client library. It is inspired by Retrofit. It is flexible and extendible. There is no standard. Maybe in the future...
