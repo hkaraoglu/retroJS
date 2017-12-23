@@ -21,9 +21,21 @@ It needs Jquery.
 
 <b>To make a request: </b>
 
-<pre>var callback = new CallBack({
+<pre>
+
+function onLoginCallBackSuccess(data)
+{ 
+}
+function onLoginCallBackComplete()
+{ 
+}
+function onLoginCallBackError(message)
+{ 
+}
+
+var callback = new CallBack({
               onSuccess:onLoginCallBackSuccess,
-              onComplete:onLoginCallBackSuccess,
+              onComplete:onLoginCallBackComplete,
               onError:onLoginCallBackError,
 });
 service.login('username', 'password', callback);
