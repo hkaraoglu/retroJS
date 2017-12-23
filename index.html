@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="callback.js"></script>
+    <script type="text/javascript" src="service.js"></script>
+    <script>
+      var service = new Service("your web service url");
+    </script>
+  </head>
+
+  <body>
+
+      <script>
+          function onLoginCallBackSuccess(result)
+          {
+              console.log(result);
+          }
+
+          function onLoginCallBackComplete()
+          {
+              // Do somethings when all callback functions complete...
+          }
+
+          function onLoginCallBackError(message)
+          {
+            console.log(message);
+          }
+
+          var callback = new CallBack({
+              onSuccess:onLoginCallBackSuccess,
+              onComplete:onLoginCallBackSuccess,
+              onError:onLoginCallBackError,
+            });
+          service.login('username', 'password', callback);
+
+      </script>
+
+  </bod>
+</html>
