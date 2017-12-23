@@ -28,7 +28,7 @@
 
           var callback = new CallBack({
               onSuccess:onLoginCallBackSuccess,
-              onComplete:onLoginCallBackSuccess,
+              onComplete:onLoginCallBackComplete,
               onError:onLoginCallBackError,
             });
           service.login('username', 'password', callback);
