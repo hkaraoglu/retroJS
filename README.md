@@ -2,7 +2,7 @@
 
 This is a Pure Javascipt HTTP client library. It is inspired by Retrofit. It is flexible and extendible. It supports GET and POST requests.
 
-It needs Jquery.
+It needs Jquery +1.5.
 
 <b>Add dependencies to your html head: </b>
 <pre>
